@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 240px;
+      margin: 0;
+      padding: 14px;
+      font: 13px system-ui, sans-serif;
+      background: #1e1f22;
+      color: #e8e8ea;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 10px;
+    }
+    #value { font-size: 18px; font-weight: 600; }
+    input[type="range"] { width: 100%; margin: 0; }
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 6px;
+      border: 0;
+      border-radius: 6px;
+      background: #35363a;
+      color: inherit;
+      cursor: pointer;
+    }
+    button:hover { background: #44454a; }
+    #status { margin: 8px 0 0; color: #f0b360; font-size: 12px; }
+    #status:empty { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <span>Volume</span>
+    <span id="value">100 %</span>
+  </header>
+  <input id="gain" type="range" min="0" max="600" step="10" value="100">
+  <button id="reset">Remettre à 100 %</button>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
