@@ -4,13 +4,13 @@
 
 A Chrome extension that makes quiet videos louder. A slider in the toolbar raises the volume of the current tab up to 600 %, and fullscreen keeps working.
 
-<img src="screenshots/popup.png" width="340" alt="The volume slider">
+<img src="screenshots/popup.png" width="300" alt="The volume slider">
 
 ## What it does
 
 - **Up to 600 %.** Drag the slider to amplify every video and audio player on the page, including players inside frames.
 - **Fullscreen keeps working.** The boost is applied to the page's own sound, so video players behave as usual.
-- **One click back to normal.** The button under the slider resets the volume to 100 %.
+- **One click for the usual levels.** The buttons under the slider jump to 100, 200, 300, 400 or 600 %; 100 is back to normal.
 - **Leaves pages alone until you use it.** Nothing is changed on a page before you move the slider.
 
 The interface is in French.

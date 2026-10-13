@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Volume Boost",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Amplifie le son des vidéos sans casser le plein écran.",
   "icons": {
     "16": "icons/icon16.png",

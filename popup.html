@@ -3,34 +3,98 @@
 <head>
   <meta charset="utf-8">
   <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --field: #f2f2f7;
+      --text: #1c1c1e;
+      --muted: #8e8e93;
+      --accent: #af52de;
+      --accent-text: #ffffff;
+      --warning: #c26a00;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1c1e;
+        --field: #2c2c2e;
+        --text: #f2f2f7;
+        --accent: #bf5af2;
+        --warning: #ffb340;
+      }
+    }
+    * { box-sizing: border-box; }
     body {
-      width: 240px;
+      width: 300px;
       margin: 0;
       padding: 14px;
-      font: 13px system-ui, sans-serif;
-      background: #1e1f22;
-      color: #e8e8ea;
+      background: var(--bg);
+      color: var(--text);
+      font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
     }
     header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
-    #value { font-size: 18px; font-weight: 600; }
-    input[type="range"] { width: 100%; margin: 0; }
-    button {
-      margin-top: 10px;
+    header span:first-child { color: var(--muted); font-weight: 600; }
+    #value {
+      font-size: 26px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+    }
+    /* Le curseur : une piste arrondie remplie jusqu'à la valeur, un bouton blanc. */
+    input[type="range"] {
+      display: block;
       width: 100%;
-      padding: 6px;
+      height: 24px;
+      margin: 0;
+      appearance: none;
+      background: none;
+      cursor: pointer;
+      outline: 0;
+    }
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(to right, var(--accent) var(--fill, 0%), var(--field) var(--fill, 0%));
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      margin-top: -7px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35), 0 0 0 0.5px rgba(0, 0, 0, 0.12);
+    }
+    input[type="range"]:focus-visible::-webkit-slider-thumb {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35), 0 0 0 3px color-mix(in srgb, var(--accent) 45%, transparent);
+    }
+    /* Les niveaux courants, en un clic. */
+    #presets {
+      display: flex;
+      gap: 6px;
+      margin-top: 12px;
+    }
+    #presets button {
+      flex: 1;
+      padding: 6px 0;
       border: 0;
-      border-radius: 6px;
-      background: #35363a;
-      color: inherit;
+      border-radius: 999px;
+      background: var(--field);
+      color: var(--muted);
+      font: inherit;
+      font-variant-numeric: tabular-nums;
       cursor: pointer;
     }
-    button:hover { background: #44454a; }
-    #status { margin: 8px 0 0; color: #f0b360; font-size: 12px; }
+    #presets button[aria-pressed="true"] {
+      background: color-mix(in srgb, var(--accent) 22%, var(--field));
+      color: var(--text);
+      font-weight: 600;
+    }
+    #status { margin: 10px 2px 0; color: var(--warning); font-size: 12px; }
     #status:empty { display: none; }
   </style>
 </head>
@@ -39,8 +103,14 @@
     <span>Volume</span>
     <span id="value">100 %</span>
   </header>
-  <input id="gain" type="range" min="0" max="600" step="10" value="100">
-  <button id="reset">Remettre à 100 %</button>
+  <input id="gain" type="range" min="0" max="600" step="10" value="100" aria-label="Volume">
+  <div id="presets" role="group" aria-label="Niveaux">
+    <button type="button" data-value="100">100</button>
+    <button type="button" data-value="200">200</button>
+    <button type="button" data-value="300">300</button>
+    <button type="button" data-value="400">400</button>
+    <button type="button" data-value="600">600</button>
+  </div>
   <p id="status"></p>
   <script src="popup.js"></script>
 </body>

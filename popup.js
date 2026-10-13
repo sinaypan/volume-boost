@@ -1,6 +1,7 @@
 const slider = document.getElementById('gain');
 const label = document.getElementById('value');
 const status = document.getElementById('status');
+const presets = document.getElementById('presets');
 const RELOAD_HINT = 'Recharge la page pour activer le boost.';
 
 async function activeTabId() {
@@ -10,7 +11,10 @@ async function activeTabId() {
 
 function show(percent) {
   slider.value = percent;
+  // La piste se remplit jusqu'au bouton.
+  slider.style.setProperty('--fill', `${(percent / Number(slider.max)) * 100}%`);
   label.textContent = `${percent} %`;
+  for (const button of presets.children) button.setAttribute('aria-pressed', String(Number(button.dataset.value) === percent));
 }
 
 async function setGain(percent) {
@@ -25,7 +29,12 @@ async function setGain(percent) {
 }
 
 slider.addEventListener('input', () => setGain(Number(slider.value)));
-document.getElementById('reset').addEventListener('click', () => setGain(100));
+presets.addEventListener('click', (event) => {
+  const button = event.target.closest('button[data-value]');
+  if (button) setGain(Number(button.dataset.value));
+});
+
+show(100);
 
 (async () => {
   try {
