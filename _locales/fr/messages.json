@@ -1,0 +1,8 @@
+{
+  "extName": { "message": "Volume Boost" },
+  "extDesc": { "message": "Amplifie le son des vidéos sans casser le plein écran." },
+  "volume": { "message": "Volume" },
+  "levels": { "message": "Niveaux" },
+  "percent": { "message": "$VALUE$ %", "placeholders": { "value": { "content": "$1" } } },
+  "reloadHint": { "message": "Recharge la page pour activer le boost." }
+}

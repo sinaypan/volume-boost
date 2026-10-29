@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <style>
@@ -100,11 +100,11 @@
 </head>
 <body>
   <header>
-    <span>Volume</span>
-    <span id="value">100 %</span>
+    <span data-i18n="volume">Volume</span>
+    <span id="value"></span>
   </header>
-  <input id="gain" type="range" min="0" max="600" step="10" value="100" aria-label="Volume">
-  <div id="presets" role="group" aria-label="Niveaux">
+  <input id="gain" type="range" min="0" max="600" step="10" value="100" data-i18n-aria-label="volume">
+  <div id="presets" role="group" data-i18n-aria-label="levels">
     <button type="button" data-value="100">100</button>
     <button type="button" data-value="200">200</button>
     <button type="button" data-value="300">300</button>
@@ -112,6 +112,7 @@
     <button type="button" data-value="600">600</button>
   </div>
   <p id="status"></p>
+  <script src="i18n.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>
