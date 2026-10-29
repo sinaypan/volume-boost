@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "Делает видео громче, не выходя из полноэкранного режима."
+  },
+  "volume": {
+    "message": "Громкость"
+  },
+  "levels": {
+    "message": "Уровни"
+  },
+  "percent": {
+    "message": "$VALUE$ %",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "Перезагрузите страницу, чтобы включить усиление."
+  }
+}

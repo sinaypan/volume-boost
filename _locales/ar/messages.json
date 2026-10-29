@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "يرفع صوت الفيديوهات دون الخروج من وضع ملء الشاشة."
+  },
+  "volume": {
+    "message": "مستوى الصوت"
+  },
+  "levels": {
+    "message": "المستويات"
+  },
+  "percent": {
+    "message": "$VALUE$٪",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "أعد تحميل الصفحة لتفعيل التضخيم."
+  }
+}

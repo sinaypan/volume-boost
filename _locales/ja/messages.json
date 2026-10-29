@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "全画面表示のまま動画の音量を上げます。"
+  },
+  "volume": {
+    "message": "音量"
+  },
+  "levels": {
+    "message": "レベル"
+  },
+  "percent": {
+    "message": "$VALUE$%",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "ブーストを有効にするにはページを再読み込みしてください。"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "不退出全屏即可放大视频音量。"
+  },
+  "volume": {
+    "message": "音量"
+  },
+  "levels": {
+    "message": "档位"
+  },
+  "percent": {
+    "message": "$VALUE$%",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "请重新加载页面以开启增强。"
+  }
+}

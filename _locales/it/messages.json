@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "Alza il volume dei video senza uscire dallo schermo intero."
+  },
+  "volume": {
+    "message": "Volume"
+  },
+  "levels": {
+    "message": "Livelli"
+  },
+  "percent": {
+    "message": "$VALUE$%",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "Ricarica la pagina per attivare l’amplificazione."
+  }
+}

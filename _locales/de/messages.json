@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "Macht Videos lauter, ohne den Vollbildmodus zu verlassen."
+  },
+  "volume": {
+    "message": "Lautstärke"
+  },
+  "levels": {
+    "message": "Stufen"
+  },
+  "percent": {
+    "message": "$VALUE$ %",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "Lade die Seite neu, um die Verstärkung einzuschalten."
+  }
+}

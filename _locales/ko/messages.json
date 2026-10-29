@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "전체 화면을 유지한 채 동영상 소리를 키웁니다."
+  },
+  "volume": {
+    "message": "볼륨"
+  },
+  "levels": {
+    "message": "단계"
+  },
+  "percent": {
+    "message": "$VALUE$%",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "증폭을 켜려면 페이지를 새로고침하세요."
+  }
+}

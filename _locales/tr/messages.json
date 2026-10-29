@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "Tam ekrandan çıkmadan videoların sesini yükseltir."
+  },
+  "volume": {
+    "message": "Ses"
+  },
+  "levels": {
+    "message": "Seviyeler"
+  },
+  "percent": {
+    "message": "%$VALUE$",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "Güçlendirmeyi açmak için sayfayı yenileyin."
+  }
+}

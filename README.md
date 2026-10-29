@@ -13,7 +13,7 @@ A Chrome extension that makes quiet videos louder. A slider in the toolbar raise
 - **One click for the usual levels.** The buttons under the slider jump to 100, 200, 300, 400 or 600%; 100 is back to normal.
 - **Leaves pages alone until you use it.** Nothing is changed on a page before you move the slider.
 
-The interface follows the language of Chrome: English by default, French when Chrome is set to French.
+The interface follows the language of Chrome: English by default, and also French, Spanish, Brazilian Portuguese, German, Italian, Russian, Turkish, Arabic, Japanese, Korean and Simplified Chinese.
 
 ## Install
 

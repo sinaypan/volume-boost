@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Volume Boost"
+  },
+  "extDesc": {
+    "message": "Sube el sonido de los vídeos sin salir de la pantalla completa."
+  },
+  "volume": {
+    "message": "Volumen"
+  },
+  "levels": {
+    "message": "Niveles"
+  },
+  "percent": {
+    "message": "$VALUE$ %",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "reloadHint": {
+    "message": "Vuelve a cargar la página para activar el aumento."
+  }
+}
